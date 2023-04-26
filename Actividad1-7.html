@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos para el Formulario segun los Criterios de la Actividad -->
+    <style>
+        p{
+            color: red;
+        }
+
+        #miboton{
+            background-color: blue;
+        }
+
+        .cajon{
+            border-color: green;
+        }
+
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegador Superior de la Pagina -->
+    <nav>
+        <a href="index.html"><img src="imagenes/logosantotomas.svg" alt=""></a>
+        <ul class="lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Actividad1-2.html">Actividad 1-2</a></li>
+            <li><a href="Actividad1-3.html">Actividad 1-3</a></li>
+            <li><a href="Actividad1-4.html">Actividad 1-4</a></li>
+            <li><a href="Actividad1-6.html">Actividad 1-6</a></li>
+            <li><a href="Actividad1-7.html">Actividad 1-7</a></li>
+            <li><a href="Diseño_con_CSS_base.html">Actividad 1-8</a></li>
+        </ul>
+    </nav>
+    <form method="post">
+        <h2>Rellena tu CV</h2>
+        <p>Nombre</p>
+        <input class="cajon" type="text" name="nombre">
+        <p>Apellidos</p>
+        <input class="cajon" type="text" name="apellido" size="60">
+        <p>Contraseña</p>
+        <input class="cajon" type="password" name="contra">
+        <p>Dni</p>
+        <input class="cajon" type="text" name="dni" size="10">
+        <p>Sexo</p>
+        <input class="cajon" type="radio" name="sexo">Hombre <br>
+        <input class="cajon" type="radio" name="sexo">Mujer <br>
+        <p></p>
+        <label>Incluir mi Foto</label>
+        <input class="cajon" type="search" name="foto"><button>Elegir</button> <br>
+        <p></p>
+        <input class="cajon" type="checkbox" name="Suscripcion">Suscribirme al Boletin de novedades<br>
+        <p></p>
+        <input id="miboton" type="button" value="Guardar cambios">
+        <input class="cajon" type="button" value="Borrar los datos introducidos">
+    </form>
+</body>
+</html>

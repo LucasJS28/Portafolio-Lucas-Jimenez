@@ -1,0 +1,102 @@
+/* Establece el modelo de caja para todos los elementos a border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Establece el margen del cuerpo de la página a 0 */
+body{
+    margin: 0;
+}
+
+/* Divide las opciones en una cantidad determinada de espacio (width) y les da un espacio para su distribucion (justify-content)  */
+/* Float:right Mantiene las opciones del menu en la parte superior Derecha de la pantalla */
+.lista{
+    width: 900px;
+    margin-right: 100px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+/* Le quita el estilo de lista a los elementos li dentro del menu superior */
+.lista li{
+    list-style: none;
+}
+/* Cambia el color de las Redirecciones y les quita la decoracion por defecto */
+.lista li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+/* Acciones de cuando se quita o se sobrepone el mouse sobre el elemento */
+.lista li a:hover{
+    background-color: #19bb26;
+    padding: 5px;
+    color: rgb(255, 238, 0);
+    transform: scale(1.5);
+    transition: 1.1s;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+/* Establece el estilo de los enlaces cuando el mouse no está sobre ellos */
+.lista li a:not(:hover){
+    transform: scale(1.0);
+    transition: 1s;
+}
+/* Estila el navegador superior y lo ajusta */
+nav{
+    background-color: #1fb689;
+    height: 70px;
+    margin:-5px;
+    width: auto;
+    border-bottom: 1px solid rgb(126, 6, 6);
+    margin-bottom: 20px;
+}
+/* Estilo de la Imagen del navegador */
+nav img{
+    width: 160px;
+    margin: 5px 0px 5px 10px;
+    padding: 10px;
+}
+/* Accion si el mouse pasa sobre la imagen / Aumenta el tamaño de la imagen */
+nav img:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+/* Accion de si se quita el mouse sobre la imagen / Devuelve el Elemento a su Tamaño original */
+nav img:not(hover){
+    transform: scale(1.0);
+}
+/* Dandole espacio a los Form de todas las Paginas al estar muy pegados al borde / Agrega un margen de 20px a la izquierda de todos los formularios en la página. */
+form{
+    margin-left: 20px;
+}
+
+/* Estilos para la informacion principal del Index */
+#Contenedor{
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Le da un contorno al titulo Principal */
+#Contenedor h1{
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: #00BD85;
+}
+/* Ajusta el texto dentro de la informacion */
+.info{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+/* Cambio de color de las etiquetas Span */
+.info span{
+    color: blue;
+}
