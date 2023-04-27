@@ -188,8 +188,8 @@ h2{
 }
 
 /* Media query para ajustar el panel izquierdo al estar en monitores pequeños */
-@media(max-width: 1400px) {
+@media(max-width: 1470px) {
     #mw-panel{
-        height: 3000px;
+        height: 3700px;
     }
 }

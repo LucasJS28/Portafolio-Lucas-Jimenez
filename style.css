@@ -25,18 +25,24 @@ body{
 }
 /* Cambia el color de las Redirecciones y les quita la decoracion por defecto */
 .lista li a{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* Acciones de cuando se quita o se sobrepone el mouse sobre el elemento */
 .lista li a:hover{
-    background-color: #19bb26;
-    padding: 5px;
-    color: rgb(255, 238, 0);
+    background-color: #cfa01d;
+    padding-top: 19px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(251, 255, 0);
     transform: scale(1.5);
-    transition: 1.1s;
-    border-radius: 30px;
+    transition: 0.4s;
     border: 1px solid white;
 }
 /* Establece el estilo de los enlaces cuando el mouse no está sobre ellos */
@@ -46,16 +52,16 @@ body{
 }
 /* Estila el navegador superior y lo ajusta */
 nav{
-    background-color: #1fb689;
+    background-color: #f8b600;
     height: 70px;
     margin:-5px;
     width: auto;
-    border-bottom: 1px solid rgb(126, 6, 6);
+    border-bottom: 1px solid rgba(63, 63, 63, 0.685);
     margin-bottom: 20px;
 }
 /* Estilo de la Imagen del navegador */
 nav img{
-    width: 160px;
+    width: 280px;
     margin: 5px 0px 5px 10px;
     padding: 10px;
 }
@@ -75,28 +81,32 @@ form{
 
 /* Estilos para la informacion principal del Index */
 #Contenedor{
-    width: 800px;
+    width: 1000px;
     height: 200px;
     margin: 0 auto;
     text-align: center;
 }
 /* Le da un contorno al titulo Principal */
 #Contenedor h1{
-    color: rgb(255, 255, 255);
+    color: rgba(37, 34, 34, 0.822);
     padding: 30px;
     font-size: 30px;
     border-radius: 30px;
-    border: 1px solid black;
-    background-color: #00BD85;
+    border: 5px solid rgba(0, 0, 0, 0.596);
+    background-color: #ffd000;
 }
 /* Ajusta el texto dentro de la informacion */
 .info{
     padding: 10px;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
+    border: 5px solid #ffd000;
+    box-shadow: 10px 10px 10px #ffd000 ;
 }
 /* Cambio de color de las etiquetas Span */
 .info span{
     color: blue;
+    font-weight: 800;
+    font-size: 18px;
+    font-style: italic;
 }
