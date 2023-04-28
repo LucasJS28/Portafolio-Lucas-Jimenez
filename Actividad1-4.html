@@ -21,19 +21,20 @@
             <li><a href="Diseño_con_CSS_base.html">Actividad 1-8</a></li>
         </ul>
     </nav>
+    <!-- Etiqueta Bajo el Nav del Autor -->
     <h4 class="Autorp">Pagina Realizada por <em>Lucas Jimenez</em></h4>
     <!-- Formulario Actividad 1-4 -->
     <!-- maxlenght:Cantidad de Caracteres Maximo   requiered:Obliga al usuario a llenar el campo-->
     <form action="destino_formularios.php" method="post">
-        <input maxlength="30" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required size="30">
-        <br><br>
-        <input maxlength="30" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required size="30">
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" size="30" maxlength="30" required>
+        <br><br>    
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" size="30" maxlength="30" required>
         <br><br>
         <input type="password" name="contra" id="contra" placeholder="Ingrese Contraseña" required>
         <br><br>
-        <textarea name="Ingrese Descripcion" cols="30" rows="10"></textarea>
+        <textarea name="descripción" id="descripcion" cols="30" rows="10" placeholder="Ingrese una Descripcion"></textarea>
         <br><br>
-        <input disabled type="text" name="contenedor" value="Programacion Web">
+        <input type="text" name="contenedor" value="Programacion Web" disabled>
         <br><br>
         <input type="submit" value="Enviar Formulario">
     </form>

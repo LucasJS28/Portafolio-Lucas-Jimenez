@@ -39,6 +39,7 @@
             <li><a href="Diseño_con_CSS_base.html">Actividad 1-8</a></li>
         </ul>
     </nav>
+    <!-- Etiqueta Bajo el Nav del Autor -->
     <h4 class="Autorp">Pagina Realizada por <em>Lucas Jimenez</em></h4>
     <!-- Los Estilos estan en la parte superior para Evitar problemas de Clases y Mantener buena Estructura -->
     <form method="post" action="Actividad1-7.html">
@@ -52,15 +53,15 @@
         <p>Dni</p>
         <input class="cajon" type="text" name="dni" size="10">
         <p>Sexo</p>
-        <input class="cajon" type="radio" name="sexo">Hombre <br>
-        <input class="cajon" type="radio" name="sexo">Mujer <br>
-        <p></p>
-        <label>Incluir mi Foto</label>
-        <input class="cajon" type="search" name="foto"><button>Elegir</button> <br>
+        <input class="cajon" type="radio" name="sexo" value="Hombre">Hombre <br>
+        <input class="cajon" type="radio" name="sexo" value="Mujer">Mujer <br>
+        <br>
+        <label for="foto">Incluir mi Foto</label>
+        <input class="cajon" type="search" name="foto" id="foto"><button>Elegir</button> <br>
         <p></p>
         <input class="cajon" type="checkbox" name="Suscripcion">Suscribirme al Boletin de novedades<br>
         <p></p>
-        <input id="miboton" type="submit" value="Guardar cambios">
+        <input class="cajon" id="miboton" type="submit" value="Guardar cambios">
         <input class="cajon" type="reset" value="Borrar los datos introducidos">
     </form>
 </body>
