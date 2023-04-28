@@ -62,7 +62,6 @@ h2{
     background-color: #f8f9fa;
     border: 1px solid #a2a9b1;
     padding: 5px;
-    font-size: 95%;
     width: 300px;
 }
 
@@ -147,12 +146,14 @@ h2{
 #footer li{
     list-style: none;
 }
+/* Ajusta los elementos del footer en modo que se distribuyen de forma de Filas */
 #footer-places{
-    display: flex;
+    display: flex; 
+    flex-direction: row;
 }
 
 #footer-places li{
-    margin-right: 30px;
+    margin-right: 30px; /* Añade espacios entre los elementos de la lista */
 }
 
 /* Menu Superior de Busqueda */
@@ -187,10 +188,10 @@ h2{
     padding: 5px;
 }
 
-/* Media query para ajustar el panel izquierdo al estar en monitores pequeños */
+/* Media query para ajustar el panel al estar en una pantalla pequeña */
 @media(max-width: 1470px) {
     #mw-panel{
-        height: 3700px;
+        height: 3700px; /* Ajusta el panel lateral para ocupar todo el largo de la pantalla */
     }
 
     .mw-body{ 
