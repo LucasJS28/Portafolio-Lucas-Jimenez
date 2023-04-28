@@ -81,7 +81,7 @@ h2{
 /* Estilos del navegador superior */
 #mw-head{
     position: absolute;
-    top: 40px;
+    top: 80px;
     height: 70px;
     right: 0;
 }
@@ -191,5 +191,9 @@ h2{
 @media(max-width: 1470px) {
     #mw-panel{
         height: 3700px;
+    }
+
+    .mw-body{ 
+        margin-left: 14%; /* Separa el contenido del navegador izquierdo */
     }
 }
