@@ -42,7 +42,7 @@ body{
     padding-right: 10px;
     color: rgb(251, 255, 0);
     transform: scale(1.5);
-    transition: 0.4s;
+    transition: 0.2s;
     border: 1px solid white;
 }
 /* Establece el estilo de los enlaces cuando el mouse no está sobre ellos */
