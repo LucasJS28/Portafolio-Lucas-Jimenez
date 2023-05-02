@@ -10,7 +10,7 @@ a{
 .infobox{
     border: 1px solid #B4BBC8;
     float: right; /* Hace que el elemento se flote hacia la derecha */
-    margin-right: -260px; /* Le da un margen negativo a la derecha para que se superponga */
+    margin-right: -340px; /* Le da un margen negativo a la derecha para que se superponga */
     margin-left: 30px;
 }
 
@@ -30,7 +30,7 @@ body{
 /* Cambia la fuente, tamaño y estilo de los párrafos y las listas */
 p,li{
     font-family: sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     font-style: normal;
 }
@@ -70,7 +70,7 @@ h2{
 #mw-panel{
     position: absolute;
     top: 65px;
-    height: 283vh; /* Le da una altura fija para que ocupe todo el alto de la ventana */
+    height: 288vh; /* Le da una altura fija para que ocupe todo el alto de la ventana */
     border: 1px solid #A7D7F9;
     width: 10em; /* Ajusta el ancho del contenedor */
     left: 0; /* lo ajusta a la izquierda */
@@ -136,16 +136,18 @@ h2{
 
 /* Estilos para el Footer */
 #footer{
-    background-color: rgb(243, 243, 243);
+    background-color: #FAF8F8;
     border: 1px solid #A7D7F9;
     padding-left: 300px; /* Ajusta el contenido a la derecha */
     font-family: sans-serif; /* Cambia su tipo de letra */
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 400;
 }
 /* Ajustes de las anclas del footer */
 #footer li{
     list-style: none;
+    font-size: 10px;
+    padding-right: 50px;
 }
 /* Ajusta los elementos del footer en modo que se distribuyen de forma de Filas */
 #footer-places{
@@ -197,5 +199,9 @@ h2{
 
     .mw-body{ 
         margin-left: 14%; /* Separa el contenido del navegador izquierdo */
+    }
+
+    .infobox{
+        margin-right: -260px; /* Le da un margen negativo a la derecha para que se superponga */
     }
 }
