@@ -12,7 +12,7 @@ a{
     float: right; /* Hace que el elemento se flote hacia la derecha */
     margin-right: -340px; /* Le da un margen negativo a la derecha para que se superponga */
     margin-left: 30px;
-    border-collapse: collapse; /* Elimina los bordes dobles en la tabla  */
+    border-collapse: collapse; /* Elimina los bordes dobles en la tabla */
 }
 
 /* Estilos de las tablas dentro del infobox */
@@ -46,11 +46,6 @@ body{
     font-family: sans-serif;
 }
 
-/* Oculta los títulos de nivel 2 */
-h2{
-    display: none;
-}
-
 /* Estilos de la imagen dentro del infobox */
 #imagencss{
     width: 150px;
@@ -66,11 +61,17 @@ h2{
     width: 300px;
 }
 
+/* Titulo del menu flotante {Indice} */
+.toc h2{
+    text-align: center;
+    font-size: 15px;
+}
+
 /* Estilos del navegador lateral izquierdo */
 #mw-panel{
     position: absolute;
     top: 65px;
-    height: 2700px; /* Le da una altura fija para que ocupe todo el alto de la ventana */
+    height: 2900px; /* Le da una altura fija para que ocupe todo el alto de la ventana */
     border: 1px solid #A7D7F9;
     width: 10em; /* Ajusta el ancho del contenedor */
     left: 0; /* lo ajusta a la izquierda */
@@ -97,6 +98,10 @@ h3,h4{
     width: 900px; /* Ajustando el ancho del separador del titulo */
     border-bottom: 1px solid black;  
 }
+h2{
+    font-style: normal;
+    font-size: 19px;
+}
 /* Ajustando el diseño de los Bracket de cada titulo con su opcion de Editar */
 .mw-editsection-bracket{
     font-size: small;
@@ -122,8 +127,17 @@ h3,h4{
 /* Contenedor Principal del body y toda la informacion central*/
 .mw-body{
     margin-top: 120px; /* Lo aleja del navegador y parte superior */
-    margin-left: 12%; /* Separa el contenido del navegador izquierdo */
+    margin-left: 10%; /* Separa el contenido del navegador izquierdo */
     margin-right: 20%;
+}
+
+/* Titulo Principal */
+.firstHeading{
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    border-bottom: 0.1px solid black; /* Colores y grosor del subrayado */
+    width: 100%; /* Ajustando el subrayado al ancho total de la pagina */
 }
 /* Ajustes para el menu de inicio de sesion y busqueda */
 #p-personal ul {
@@ -175,7 +189,7 @@ h3,h4{
 
 /* Menu Superior de Busqueda */
 #mw-navigation h3{
-    display: none; /* Vuelve "Invicible ciertos titulos" */
+    display: none; /* Vuelve "Invisible ciertos titulos" */
 }
 /* Ajusta los elementos del menu de busqueda */
 #right-navigation{
@@ -206,9 +220,9 @@ h3,h4{
 }
 
 /* Media query para ajustar el panel al estar en una pantalla pequeña */
-@media(max-width: 1470px) {
+@media(max-width: 1490px) {
     #mw-panel{
-        height: 3000px; /* Ajusta el panel lateral para ocupar todo el largo de la pantalla */
+        height: 3100px; /* Ajusta el panel lateral para ocupar todo el largo de la pantalla */
     }
 
     .mw-body{ 
