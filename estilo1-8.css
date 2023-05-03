@@ -12,12 +12,12 @@ a{
     float: right; /* Hace que el elemento se flote hacia la derecha */
     margin-right: -340px; /* Le da un margen negativo a la derecha para que se superponga */
     margin-left: 30px;
+    border-collapse: collapse; /* Elimina los bordes dobles en la tabla  */
 }
 
 /* Estilos de las tablas dentro del infobox */
 .infobox table, tr, td, th {
     border: 1px solid #B4BBC8;
-    border-collapse: collapse;
     padding: 5px;
 }
 
@@ -70,7 +70,7 @@ h2{
 #mw-panel{
     position: absolute;
     top: 65px;
-    height: 288vh; /* Le da una altura fija para que ocupe todo el alto de la ventana */
+    height: 2700px; /* Le da una altura fija para que ocupe todo el alto de la ventana */
     border: 1px solid #A7D7F9;
     width: 10em; /* Ajusta el ancho del contenedor */
     left: 0; /* lo ajusta a la izquierda */
@@ -84,6 +84,23 @@ h2{
     top: 80px;
     height: 70px;
     right: 0;
+}
+
+/* Quitando las lineas inferiores de los titulos */
+.mw-headline{
+    text-decoration: none  !important;
+    margin-right: 10px;
+}
+
+/* Arreglando los titulos de Cada seccion */
+h3,h4{
+    width: 900px; /* Ajustando el ancho del separador del titulo */
+    border-bottom: 1px solid black;  
+}
+/* Ajustando el diseño de los Bracket de cada titulo con su opcion de Editar */
+.mw-editsection-bracket{
+    font-size: small;
+    font-weight: 100;
 }
 
 /* Estilos del menú personal del navegador superior */
@@ -102,10 +119,6 @@ h2{
     margin-left: -40px; /* Le da un margen negativo para que se superponga sobre el borde del menú */
 }
 
-/* Ajustando el estilo del título del menú */
-.mw-headline{
-    text-decoration: underline black; /* Subraya el título */
-}
 /* Contenedor Principal del body y toda la informacion central*/
 .mw-body{
     margin-top: 120px; /* Lo aleja del navegador y parte superior */
@@ -141,6 +154,7 @@ h2{
     padding-left: 300px; /* Ajusta el contenido a la derecha */
     font-family: sans-serif; /* Cambia su tipo de letra */
     font-size: 8px;
+    position: relative;
     font-weight: 400;
 }
 /* Ajustes de las anclas del footer */
@@ -194,7 +208,7 @@ h2{
 /* Media query para ajustar el panel al estar en una pantalla pequeña */
 @media(max-width: 1470px) {
     #mw-panel{
-        height: 3700px; /* Ajusta el panel lateral para ocupar todo el largo de la pantalla */
+        height: 3000px; /* Ajusta el panel lateral para ocupar todo el largo de la pantalla */
     }
 
     .mw-body{ 
@@ -204,4 +218,4 @@ h2{
     .infobox{
         margin-right: -260px; /* Le da un margen negativo a la derecha para que se superponga */
     }
-}
+}   
