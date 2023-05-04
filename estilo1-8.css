@@ -95,7 +95,7 @@ body{
 
 /* Arreglando los titulos de Cada seccion */
 h3,h4{
-    width: 900px; /* Ajustando el ancho del separador del titulo */
+    width: 700px; /* Ajustando el ancho del separador del titulo */
     border-bottom: 1px solid black;  
 }
 h2{
