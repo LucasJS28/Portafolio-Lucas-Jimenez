@@ -36,7 +36,10 @@ p,li{
 }
 
 /* Animación cuando el mouse está sobre el infobox */
-.infobox:hover{
+th:hover{
+    background: rgba(230, 228, 228, 0.781);
+}
+td:hover{
     background: rgba(230, 228, 228, 0.781);
 }
 
